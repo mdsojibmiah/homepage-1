@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .banner{
     width: 100%;
@@ -96,22 +96,14 @@ button:hover span{
 button:hover{
     border: none;
 }
-
+/*=========RESPONSIVE =========*/
 @media (max-width:576px) {
     
     .navbar{
         width: 90%;
-        /* margin:auto;
-        padding: 20px 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between; */
     }
     .navbar ul li{
-        /* display:inline-block ;
-        list-style: none; */
         margin: 0 8px;
-        /* position: relative; */
     }
     .navbar ul li a{
         font-size: 13px;
@@ -125,26 +117,16 @@ button:hover{
         margin-top: 30px;
     }
     .content p{
-        /* margin: 20px auto;
-        font-weight: 100;
-        line-height: 25px; */
         font-size: 15px;
+    }
       
 }
 @media (max-width:399px){
     .navbar{
         width: 100%;
-        /* margin:auto;
-        padding: 20px 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between; */
     }
     .navbar ul li{
-        /* display:inline-block ;
-        list-style: none; */
         margin: 0 8px;
-        /* position: relative; */
     }
     .navbar ul li a{
         font-size: 10px;
@@ -161,5 +143,6 @@ button:hover{
         text-align: center;
         line-height: 20px;
         font-size: 13px;
+    }
 
 }
