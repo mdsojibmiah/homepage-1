@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(151, 105, 39, 0.75),rgba(0,0,0,0.75)),url(bg-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.navbar{
+    width: 85%;
+    margin:auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo{
+    width: 90px;
+    cursor: pointer;
+}
+.navbar ul li{
+    display:inline-block ;
+    list-style: none;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: .5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 50px;
+}
+.content p{
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border:2px solid #009688;
+    border-radius: 25px;
+    font-weight: bold;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: .5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+
+@media (max-width:576px) {
+    
+    .navbar{
+        width: 90%;
+        /* margin:auto;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; */
+    }
+    .navbar ul li{
+        /* display:inline-block ;
+        list-style: none; */
+        margin: 0 8px;
+        /* position: relative; */
+    }
+    .navbar ul li a{
+        font-size: 13px;
+    }
+    .navbar .logo{
+        width: 50px;
+        cursor: pointer;
+    }
+    .content h1{
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    .content p{
+        /* margin: 20px auto;
+        font-weight: 100;
+        line-height: 25px; */
+        font-size: 15px;
+      
+}
+@media (max-width:399px){
+    .navbar{
+        width: 100%;
+        /* margin:auto;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; */
+    }
+    .navbar ul li{
+        /* display:inline-block ;
+        list-style: none; */
+        margin: 0 8px;
+        /* position: relative; */
+    }
+    .navbar ul li a{
+        font-size: 10px;
+    }
+    .navbar .logo{
+        width: 50px;
+        cursor: pointer;
+    }
+    .content h1{
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    .content p{
+        text-align: center;
+        line-height: 20px;
+        font-size: 13px;
+
+}
